@@ -10,7 +10,12 @@ body {
   margin: 0;
 }
 
-html .header-container {
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html .body-container {
   font-size: 90.5%;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -269,7 +274,7 @@ li.welcome:hover {
 }
 .box_1 {
   display: grid;
-  grid-template-columns: 0.8fr 3fr 3fr;
+  grid-template-columns: 0.8fr 3fr 2fr;
   padding: 20px;
 }
 
@@ -277,7 +282,7 @@ li.welcome:hover {
   /* border: 1px solid black; */
 }
 .mini_pic_container {
-  padding-left: 80px;
+  padding-left: 20px;
 }
 .box_1_middle {
   /* border: 1px solid black; */
@@ -408,6 +413,7 @@ li.welcome:hover {
   padding: 10px 40px;
 }
 h1.end_title {
+  font-size: 30px;
   padding-bottom: 11px;
 }
 .stars_icon_div {
@@ -441,8 +447,12 @@ a.review_txt:hover {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.box1_1_end_body h3 span {
+.box1_1_end_body h3 span.reduce_1 {
   color: #d63855;
+  font-size: 18px;
+}
+.box1_1_end_body h3 span.reduce_2 {
+  font-size: 14px;
 }
 .money_div {
   padding: 10px 0px;
@@ -456,6 +466,7 @@ del {
 }
 
 .circle_text {
+  font-size: 15px;
   padding: 10px 0px;
 }
 
@@ -466,8 +477,12 @@ del {
   border-radius: 50%;
   border: 1px;
   border-color: #002b5c;
+  width: 30px;
 }
 
+.size_text_div {
+  font-size: 16px;
+}
 .size_boses_div {
   padding: 40px 0px;
   position: relative;
@@ -477,13 +492,20 @@ del {
   padding-left: 20px;
   text-decoration: underline;
 }
+.size_boxes {
+  display: grid;
+  grid-template-columns: 1fr repeat(10, 1fr);
+  padding-left: 40px;
+}
 
-.box_shape {
-  width: 40px;
+div.box_shape {
+  width: 80px;
   border: 1px solid black;
   display: inline;
   padding: 20px;
   background-color: #f7f7f7;
+  margin-right: 3px;
+  font-size: 12px;
 }
 .box_shape:hover {
   background-color: #002b5c;
@@ -575,6 +597,7 @@ a.review_txt:hover {
   padding: 20px;
   background-color: #f7f7f7;
   color: #002b5c;
+  font-size: 17px;
 }
 
 .box_2_inner_left {
