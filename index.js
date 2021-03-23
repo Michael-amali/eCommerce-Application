@@ -26,3 +26,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// function valInput(){
+//   return document.querySelector("btn_plus")
+// }
+
+function add(){
+  let valInput = $("#num").val();
+  valInput = (valInput == "") ? 1 : parseInt(valInput) + 1;
+  if(valInput > 10){
+    return;
+  }
+  $("#num").val(valInput);
+}
+
+
+function subtract(){
+  let valInput = $("#num").val();
+  if(valInput > 0){
+    valInput = (valInput == "") ? 1 : parseInt(valInput) - 1;
+    $("#num").val(valInput);
+  }
+  
+}
