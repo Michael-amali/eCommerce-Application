@@ -1,3 +1,12 @@
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Nunito Sans", sans-serif;
+} */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,13 +22,13 @@ html {
   margin-left: 8rem;
   margin-right: 8rem;
   gap: 1rem;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: minmax(1fr, auto);
   grid-template-areas:
-    "a a b b c"
-    "d d d . c"
-    "e f g h c"
-    ". . . . c";
+    "a a b b b c"
+    "d d d d d c"
+    "e e f g h c"
+    ". . . . . c";
 }
 
 .cart__paypal {
@@ -61,7 +70,7 @@ html {
 .salesTax,
 .estimatedTotal {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 1rem;
 }
 
@@ -132,7 +141,7 @@ form {
 }
 
 .file p:first-of-type {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 #c {
@@ -141,10 +150,64 @@ form {
 
 #d {
   grid-area: d;
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  text-align: center;
+}
+
+#itemHeader {
+  font-size: 1.4rem;
+  color: #002b5c;
+}
+
+.styleColorSize {
+  display: flex;
+}
+
+.styleColorSize p {
+  margin-right: 1rem;
+  color: #333;
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.editRemove {
+  display: flex;
+}
+
+#edit:hover {
+  border-bottom: 1px solid #333;
+}
+
+.editRemove p::after {
+  content: " |";
+}
+
+.editRemove p {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#d ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-evenly;
+}
+
+#d ul li {
+  font-size: 1.3rem;
 }
 
 #e {
   grid-area: e;
+  display: flex;
+}
+
+#e img {
+  margin-right: 1rem;
 }
 
 #f {
@@ -155,11 +218,38 @@ form {
   grid-area: g;
 }
 
+#g div {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+#g div * {
+  margin-bottom: 1rem;
+}
+
+#initialPrice {
+  display: flex;
+  font-size: 1rem;
+}
+
+#currentPrice {
+  font-size: 2rem;
+  color: #333;
+}
+
+#initialPrice p:first-of-type {
+  margin-right: 1rem;
+}
+
+#initialPrice p:last-of-type {
+  text-decoration: line-through;
+}
+
 #h {
   grid-area: h;
 }
 
-#i {
+/* #i {
   grid-area: i;
 }
 
@@ -173,4 +263,21 @@ form {
 
 #l {
   grid-area: l;
+} */
+
+/* cart button to shipping */
+#checkout {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  outline: 0;
+  cursor: pointer;
+  padding-left: 9rem;
+}
+
+p {
+  font-size: 15px;
+}
+div.styleColorSize {
+  font-size: 15px;
 }

@@ -1,0 +1,131 @@
+#two__four ul li {
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(1rem, auto);
+  grid-template-areas:
+    "aa . bb"
+    ". dd bb"
+    ". cc .";
+}
+
+.orderSummary {
+  display: flex;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.orderSummary button {
+  background-color: w;
+  padding: 1rem 1.5rem;
+  outline: 0;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 2px solid #002b5c;
+  cursor: pointer;
+}
+
+a {
+  color: #002b5c;
+}
+
+.orderCard {
+  background-color: #002b5c;
+  padding: 1rem 5rem;
+}
+
+.subTotal {
+  display: flex;
+}
+
+.subTotal p:first-of-type {
+  margin-right: 15rem;
+  margin-bottom: 1rem;
+}
+
+.shppingHandling {
+  display: flex;
+}
+
+.shppingHandling p:first-of-type {
+  margin-right: 8rem;
+  margin-bottom: 1rem;
+}
+
+.salesTax {
+  display: flex;
+}
+
+.salesTax p:first-of-type {
+  margin-right: 15rem;
+  margin-bottom: 1rem;
+}
+
+.total {
+  display: flex;
+}
+
+.total p:first-of-type {
+  margin-right: 16rem;
+  margin-bottom: 1rem;
+}
+
+.aa {
+  grid-area: aa;
+  margin-left: 15rem;
+  font-size: 1.5rem;
+  color: #002b5c;
+}
+
+.bb {
+  grid-area: bb;
+}
+
+.cc {
+  grid-area: cc;
+}
+
+.cc button {
+  background-color: #d43b55;
+  color: white;
+  padding: 1.5rem 5rem;
+  border-radius: 3px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 2px 2px 3px -1px rgba(82, 77, 82, 0.77);
+}
+
+.dd {
+  grid-area: dd;
+  margin-bottom: 5rem;
+}
+
+.dd h1 {
+  color: #002b5c;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.dd p {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.dd label {
+  font-size: 1.2rem;
+  color: #002b5c;
+}
+.dd input {
+  padding: 1rem 2rem;
+}
+
+p {
+  font-size: 15px;
+}
