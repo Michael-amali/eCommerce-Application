@@ -52,6 +52,9 @@ html .body-container {
   padding-top: 0.7rem;
   text-align: center;
 }
+#close_btn {
+  cursor: pointer;
+}
 
 #one span {
   font-weight: normal;
@@ -478,13 +481,14 @@ del {
   border: 1px;
   border-color: #002b5c;
   width: 30px;
+  cursor: pointer;
 }
 
 .size_text_div {
   font-size: 16px;
 }
 .size_boses_div {
-  padding: 40px 0px;
+  padding: 10px 0px;
   position: relative;
   right: 40px;
 }
@@ -499,13 +503,14 @@ del {
 }
 
 div.box_shape {
-  width: 80px;
+  width: 50px;
   border: 1px solid black;
   display: inline;
   padding: 20px;
   background-color: #f7f7f7;
   margin-right: 3px;
   font-size: 12px;
+  cursor: pointer;
 }
 .box_shape:hover {
   background-color: #002b5c;
@@ -608,6 +613,211 @@ a.review_txt:hover {
 .box_2_inner_right {
   padding: 16px 53px 0px;
 }
+
+/* START OF SIDE SHOW DROP DOWN  */
+
+.container_1 {
+  width: 35vw;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(1fr, auto);
+  grid-template-areas:
+    "one one"
+    "two three"
+    "four four"
+    "five five"
+    "six six"
+    "seven seven";
+}
+
+#one {
+  grid-area: one;
+  display: flex;
+  justify-content: space-around;
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+#one i {
+  color: white;
+}
+#two_2 {
+  grid-area: two;
+}
+
+#two_2 img {
+  width: 16rem;
+  height: 18rem;
+}
+
+#three {
+  grid-area: three;
+}
+
+#three h2 {
+  font-size: 1.6rem;
+  color: #002b5c;
+}
+
+.prices {
+  display: flex;
+}
+
+#camel {
+  color: #444;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+#newPrice {
+  color: red;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#oldPrice {
+  color: #333;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+.prices {
+  margin-top: 1rem;
+}
+
+#quantity {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#price {
+  color: 1.4rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
+#four {
+  grid-area: four;
+}
+
+#four input {
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  width: 80%;
+  background-color: #f5f5f5;
+  border: 0;
+  outline: 0;
+}
+
+#four span {
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.additionItems {
+  background-color: #f5f5f5;
+}
+
+#four input::placeholder {
+  color: #002b5c;
+}
+
+#checkout,
+#continueShopping {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  outline: 0;
+  cursor: pointer;
+}
+
+#checkout {
+  color: white;
+  font-weight: 600;
+  background-color: #002b5c;
+  font-size: 1.5rem;
+  border: 0;
+}
+
+#continueShopping {
+  color: #002b5c;
+  background-color: white;
+  border: 1px solid #002b5c;
+}
+
+#five {
+  grid-area: five;
+}
+
+.cartSubtotal {
+  display: flex;
+  margin-bottom: 1rem;
+  border-top: 1px solid #333;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.cartSubtotal p:first-of-type {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+  color: #002b5c;
+  font-weight: 600;
+}
+
+.cartSubtotal p:last-of-type {
+  font-size: 1.3rem;
+}
+
+#freeShipping {
+  font-size: 1.2rem;
+  color: #002b5c;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+progress {
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+/* agyah remedy*/
+.Add_to_cart {
+  /* display: none; */
+  position: fixed;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  right: 0px;
+  top: 0px;
+}
+.cartHide {
+  display: none;
+}
+.showCart {
+  display: block;
+}
+/* agyah remedy*/
+
+/* END OF SIDE SHOW DROP DOWN  */
 
 /* footer */
 .site-footer {

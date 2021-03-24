@@ -23,25 +23,17 @@
                 <div id = "two">
                     <div id = "two__one">
                         <ul>
-                            <a href="#">
-                                <li id = "findStore">Find a Store</li>
-                            </a>
-                            <a href="#">
-                                <li id = "contact">Contact</li>
-                            </a>
+                            <a href="#"><li id = "findStore">Find a Store</li></a>
+                            <a href="#"><li id = "contact">Contact</li></a>
                             <span>
                                 <input type="text" placeholder="Email Address">
                                 <button>JOIN</button>
                             </span>
                         </ul>
-                        <a href="#">
-                            <p>Make an Appointment</p>
-                        </a>
+                        <a href="#"><p>Make an Appointment</p></a>
                     </div>
                     <div id = "two__two">
-                        <a href="#">
-                            <img src="images/vineyard.png" alt="vineyard vines logo">
-                        </a>
+                        <a href="#"><img src="images/vineyard.png" alt="vineyard vines logo"></a>
                     </div>
                     <div id = "two__three">
                         <ul>
@@ -97,18 +89,10 @@
             <div id = "three">
                 <div id = "three_1">
                     <ul>
-                        <a href="#">
-                            <li>Home</li>
-                        </a>
-                        <a href="#">
-                            <li>Sale</li>
-                        </a>
-                        <a href="#">
-                            <li>Kids</li>
-                        </a>
-                        <a href="#">
-                            <li>Boys</li>
-                        </a>
+                        <a href="#"><li>Home</li></a>
+                        <a href="#"><li>Sale</li></a>
+                        <a href="#"><li>Kids</li></a>
+                        <a href="#"><li>Boys</li></a>
                     </ul>
                 </div>
             </div>
@@ -132,8 +116,6 @@
                             <div class="numbertext ">1 / 3</div>
                             <img src="images/coat_pic_front.jpg" style="width:100%">
                             <div class="text text_on_img"><p class="img_txt"><br/> <br></p>
-                                
-
                             </div>
                         </div>
                     
@@ -170,21 +152,7 @@
                         
                     </div>
 
-                    <!-- <div class="box_1_end_body">
-                        <h3>FREE GROUND SHIPPING on all orders over $125</h3>
-                        <p>$48.99 <span>$98.50</span> </p>
-                        <div>
-                            <span>Color: </span><span>Camel</span>
-                            <p>0</p>
-                            <img src="" alt="">
-                        </div>
-                        <div>
-                            <a href=""><button class="btn_bag">ADD TO BAG</button></a>
-                        </div>
-                        <div>
-                            <a href=""><button class="btn_bag_2">Buy online, free in-store pickup</button></a>
-                        </div>
-                    </div> -->
+
                     <div class="box1_1_end_body">
                         <h3><span class="reduce_1">FREE GROUND SHIPPING</span> <span class="reduce_2">on all orders over $125</span> </h3>
                         <p class="money_div">$48.99<span><del>$98.50</del></span> </p>
@@ -196,7 +164,7 @@
                                 <span>Camel</span>
                             </div>
                             <div class="draw_circle">
-                                <a href=""><img class="circle_img" src="images/circle.jpg" alt=""></a>   
+                                <img class="circle_img" src="images/circle.jpg" alt="">   
                             </div>
 
                         </div>
@@ -211,16 +179,16 @@
                             <div class="size_boses_div">
                                 <div class="size_boxes">
                 
-                                    <a href=""><div class="box_shape">2T</div></a>
-                                    <a href=""><div class="box_shape">3T</div></a>
-                                    <a href=""><div class="box_shape">4T</div></a>
-                                    <a href=""><div class="box_shape">5</div></a>
-                                    <a href=""><div class="box_shape">6</div></a>
-                                    <a href=""><div class="box_shape">7</div></a>
-                                    <a href=""><div class="box_shape">S</div></a>
-                                    <a href=""><div class="box_shape">M</div></a>
-                                    <a href=""><div class="box_shape">L</div></a>
-                                    <a href=""><div class="box_shape">XL</div></a>       
+                                    <div class="box_shape">2T</div>
+                                    <div class="box_shape">3T</div>
+                                    <div class="box_shape">4T</div>
+                                    <div class="box_shape">5</div>
+                                    <div class="box_shape">6</div>
+                                    <div class="box_shape">7</div>
+                                    <div class="box_shape">S</div>
+                                    <div class="box_shape">M</div>
+                                    <div class="box_shape">L</div>
+                                    <div class="box_shape">XL</div>     
                                 
                                 </div>
                             </div>
@@ -230,18 +198,13 @@
 
                         <div class="add_subtract">
                             <button class="btn_minus" onclick="subtract();"><h1>-</h1></button>
-                            <input class="number_input" type="text" id="num" min="0" max="100">
+                            <input class="number_input" type="text" id="num" min="0" max="100" value="1">
                             <button class="btn_plus" onclick="add();"><h1>+</h1></button>
                         </div>
 
                         <div class="add_bag">
-                            <div>
-                                <a href=""><button class="btn_bag">ADD TO BAG</button></a>
-                            </div>
-                            <div>
-                                <a href=""><button class="btn_bag_2">Buy online, free in-store pickup</button></a>
-                            </div>
-
+                            <div><button onclick="showCart();" class="btn_bag">ADD TO BAG</button></div>
+                            <div><button class="btn_bag_2">Buy online, free in-store pickup</button></div>
                         </div>
 
 
@@ -282,6 +245,55 @@
 
         </div>
 
+        <!-- START OF SIDE SHOW DROP DOWN -->
+        <div class="container_1 Add_to_cart cartHide">
+            <div id = "one">
+                <p>Item added to Cart</p>
+                <i><img onclick="showCart();" id="close_btn" src="images/white_wrong.png" alt="" width="20px"></i>
+            </div>
+            <div id = "two_2">
+                <img  src="images/coat_pic_front.jpg" alt="cardigan">
+            </div>
+            <div id = "three">
+                <h2>Boys' Stillwater Sherpa 1/4-Zip</h2>
+                <div class = "prices">
+                    <p id = "newPrice">$48.99</p>
+                    <p id = "oldPrice">$98.50</p>
+                </div>
+                
+                <p id = "camel">Camel / 3T</p>
+                <p id = "quantity">Qty: 1</p>
+                <p id = "price">$48.99</p>
+            </div>
+            <div id = "four">
+                <div class = "additionItems">
+                    <input type="text" placeholder="1 Additional Items in Bag">
+                    <a href="#"><span>+</span></a>
+                </div>
+            </div>
+            <div id = "five">
+                <div class = "cartSubtotal">
+                    <p>CART SUBTOTAL:</p>
+                    <p>$48.99</p>
+                </div>
+    
+                <div>
+                    <progress id="file" value="95" max="100"> 80% </progress>
+                    <span>
+                        <p id = "freeShipping">You qualify for FREE SHIPPING</p>
+                    </span>
+                </div>
+            </div>
+            <div id = "six">
+                <a href="#"><button id = "checkout">CHECKOUT</button></a>
+            </div>
+            <div id = "seven">
+                <button id = "continueShopping">CONTINUE SHOPPING</button>
+            </div>
+        </div>
+        <!-- END OF SIDE SHOW DROP DOWN -->
+
+
 
         <!-- footer -->
         <!-- <section>Footer Example 3</section> -->
@@ -289,7 +301,6 @@
 		<footer class="footer-distributed">
 
 			<div class="footer-right">
-
 				<a href="#"><i class="fa fa-facebook"></i></a>
 				<a href="#"><i class="fa fa-twitter"></i></a>
 				<a href="#"><i class="fa fa-linkedin"></i></a>
@@ -298,21 +309,14 @@
 			</div>
 
 			<div class="footer-left">
-
 				<p class="footer-links">
 					<a class="link-1" href="#">Home</a>
-
 					<a href="#">Cart</a>
-
 					<a href="#">Pricing</a>
-
 					<a href="#">About</a>
-
 					<a href="#">FAQ</a>
-
 					<a href="#">Contact</a>
 				</p>
-
 				<p>Shop Boy's Still Water &copy; 2021</p>
 			</div>
 

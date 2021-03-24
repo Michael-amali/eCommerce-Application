@@ -28,9 +28,6 @@ function showSlides(n) {
 }
 
 
-// function valInput(){
-//   return document.querySelector("btn_plus")
-// }
 
 function add(){
   let valInput = $("#num").val();
@@ -50,3 +47,19 @@ function subtract(){
   }
   
 }
+
+// ADD TO CART functionality
+function showCart(){
+  if($(".container_1").hasClass("cartHide")){
+    $(".container_1").removeClass("cartHide");
+    $(".container_1").addClass("showCart");
+    
+  }
+
+  else if($(".container_1").hasClass("showCart")){
+    $(".container_1").removeClass("showCart");
+    $(".container_1").addClass("cartHide");
+  }
+
+}
+
