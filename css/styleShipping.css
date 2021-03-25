@@ -31,11 +31,11 @@
 }
 
 a {
-  color: #002b5c;
+  color: purple;
 }
 
 .orderCard {
-  background-color: #002b5c;
+  background-color: purple;
   padding: 1rem 5rem;
 }
 
@@ -79,7 +79,7 @@ a {
   grid-area: aa;
   margin-left: 15rem;
   font-size: 1.5rem;
-  color: #002b5c;
+  color: purple;
 }
 
 .bb {
@@ -108,7 +108,7 @@ a {
 }
 
 .dd h1 {
-  color: #002b5c;
+  color: purple;
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
@@ -120,7 +120,7 @@ a {
 
 .dd label {
   font-size: 1.2rem;
-  color: #002b5c;
+  color: purple;
 }
 .dd input {
   padding: 1rem 2rem;

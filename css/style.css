@@ -1,10 +1,3 @@
-html,
-body {
-  font-family: "Segoe UI", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  max-width: 100%;
-  overflow-x: hidden;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,16 +13,8 @@ html .body-container {
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* p {
-  font-size: 1.4rem;
-} */
-.main-container {
-  /* font-family: "Segoe UI"; */
-  border: 1px solid orange;
-}
 .header-container {
   border: 1px solid black;
-  /* height: 178px; */
 }
 
 /* START OF HEADER CSS */
@@ -44,7 +29,7 @@ html .body-container {
 }
 
 #one {
-  background-color: #002b5c;
+  background-color: purple;
   color: white;
   font-size: 1.4rem;
   grid-area: one;
@@ -75,7 +60,7 @@ html .body-container {
 }
 
 #two__one {
-  color: #002b5c;
+  color: purple;
   grid-area: two__one;
   margin-left: 8rem;
   margin-right: 4rem;
@@ -94,7 +79,7 @@ html .body-container {
 
 #findStore {
   font-size: 1.3rem;
-  color: #002b5c;
+  color: purple;
 }
 
 #findStore:hover {
@@ -103,7 +88,7 @@ html .body-container {
 
 #contact {
   font-size: 1.3rem;
-  color: #2e7fa0;
+  color: purple;
 }
 
 #contact:hover {
@@ -121,7 +106,7 @@ html .body-container {
 }
 
 #two__one span button {
-  background-color: #2e7fa0;
+  background-color: purple;
   border-radius: 3px;
   border: 0;
   color: white;
@@ -199,7 +184,7 @@ li.welcome:hover {
 
 #two__four ul {
   list-style-type: none;
-  color: #002b5c;
+  color: purple;
   display: flex;
   justify-content: space-around;
 }
@@ -211,7 +196,7 @@ li.welcome:hover {
 
 #two__four ul li:hover {
   /* padding: 1rem; */
-  background-color: #2e7fa0;
+  background-color: purple;
   padding: 4px;
   cursor: pointer;
   color: white;
@@ -269,7 +254,7 @@ li.welcome:hover {
 /* END OF HEADER */
 
 .body-container {
-  color: #002b5c;
+  color: purple;
   font-family: Nunito Sans Bold, sans-serif;
 }
 .sub_title_1 {
@@ -281,18 +266,14 @@ li.welcome:hover {
   padding: 20px;
 }
 
-.box_1_start {
-  /* border: 1px solid black; */
-}
 .mini_pic_container {
   padding-left: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
-.box_1_middle {
-  /* border: 1px solid black; */
-  /* width: 636px;
-  height: 757px; */
+div.psample {
+  margin-top: 0px;
 }
+
 .box_1_dimension {
   width: 636px;
   height: 757px;
@@ -408,12 +389,7 @@ li.welcome:hover {
 }
 /* END OF SLIDESHOW */
 
-/* p {
-  font-size: 2em;
-} */
-
 .box_1_end {
-  /* border: 1px solid black; */
   padding: 10px 40px;
 }
 h1.end_title {
@@ -466,7 +442,7 @@ a.review_txt:hover {
 del {
   padding-left: 30px;
   font-size: 20px;
-  color: #002b5c;
+  color: purple;
 }
 
 .circle_text {
@@ -480,7 +456,7 @@ del {
 .circle_img {
   border-radius: 50%;
   border: 1px;
-  border-color: #002b5c;
+  border-color: purple;
   width: 30px;
   cursor: pointer;
 }
@@ -514,39 +490,12 @@ div.box_shape {
   cursor: pointer;
 }
 .box_shape:hover {
-  background-color: #002b5c;
+  background-color: purple;
   color: white;
 }
 
-/* 
-.end_title {
-  color: #002b5c;
-  font-family: "Nunito Sans Bold", sans-serif;
-}
-
-.stars_icon_div {
-  display: grid;
-  grid-template-columns: 1fr repeat(6, 1fr);
-}
-div.review_width {
-  width: 120px;
-}
-div.stars_icon_div {
-  width: 20px;
-  height: 20px;
-}
-a.review_txt {
-  text-decoration: none;
-  padding-left: 15px;
-  width: 200px;
-}
-a.review_txt:hover {
-  text-decoration: underline;
-} */
-
 /* add and subtraction*/
-.add_subtract {
-}
+
 .btn_minus {
   padding: 9px 11px;
   cursor: pointer;
@@ -566,7 +515,7 @@ a.review_txt:hover {
   padding: 20px 0px;
 }
 .btn_bag {
-  background-color: #002b5c;
+  background-color: purple;
   color: white;
   font-weight: 700;
   text-align: center;
@@ -583,7 +532,7 @@ a.review_txt:hover {
 }
 
 .btn_bag_2 {
-  color: #002b5c;
+  color: purple;
   border: 1px solid #002b5c;
   font-weight: 700;
   text-align: center;
@@ -602,13 +551,12 @@ a.review_txt:hover {
   grid-template-columns: 2fr 1fr;
   padding: 20px;
   background-color: #f7f7f7;
-  color: #002b5c;
+  color: purple;
   font-size: 17px;
 }
 
 .box_2_inner_left {
   padding: 16px 67px 0px;
-  /* width: 675px; */
 }
 
 .box_2_inner_right {
@@ -638,7 +586,7 @@ a.review_txt:hover {
   grid-area: one;
   display: flex;
   justify-content: space-around;
-  background-color: #002b5c;
+  background-color: purple;
   color: white;
   text-align: center;
   font-size: 2rem;
@@ -664,7 +612,7 @@ a.review_txt:hover {
 
 #three h2 {
   font-size: 1.6rem;
-  color: #002b5c;
+  color: purple;
 }
 
 .prices {
@@ -730,7 +678,7 @@ a.review_txt:hover {
 }
 
 #four input::placeholder {
-  color: #002b5c;
+  color: purple;
 }
 
 #checkout,
@@ -745,13 +693,13 @@ a.review_txt:hover {
 #checkout {
   color: white;
   font-weight: 600;
-  background-color: #002b5c;
+  background-color: purple;
   font-size: 1.5rem;
   border: 0;
 }
 
 #continueShopping {
-  color: #002b5c;
+  color: purple;
   background-color: white;
   border: 1px solid #002b5c;
 }
@@ -771,7 +719,7 @@ a.review_txt:hover {
 .cartSubtotal p:first-of-type {
   margin-right: 2rem;
   font-size: 1.3rem;
-  color: #002b5c;
+  color: purple;
   font-weight: 600;
 }
 
@@ -781,7 +729,7 @@ a.review_txt:hover {
 
 #freeShipping {
   font-size: 1.2rem;
-  color: #002b5c;
+  color: purple;
   border-bottom: 1px solid #333;
   padding-bottom: 1rem;
 }
@@ -846,7 +794,7 @@ progress {
   color: #737373;
 }
 .site-footer a:hover {
-  color: #3366cc;
+  color: purple;
   text-decoration: none;
 }
 .footer-links {
@@ -862,7 +810,7 @@ progress {
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: #3366cc;
+  color: purple;
   text-decoration: none;
 }
 .footer-links.inline li {
@@ -932,7 +880,7 @@ progress {
 .social-icons a:focus,
 .social-icons a:hover {
   color: #fff;
-  background-color: #29aafe;
+  background-color: purple;
 }
 .social-icons.size-sm a {
   line-height: 34px;
@@ -941,13 +889,13 @@ progress {
   font-size: 14px;
 }
 .social-icons a.facebook:hover {
-  background-color: #3b5998;
+  background-color: purple;
 }
 .social-icons a.twitter:hover {
-  background-color: #00aced;
+  background-color: purple;
 }
 .social-icons a.linkedin:hover {
-  background-color: #007bb6;
+  background-color: purple;
 }
 .social-icons a.dribbble:hover {
   background-color: #ea4c89;
@@ -1182,12 +1130,8 @@ img {
 
 .zoom img {
   transition: transform 0.5s ease;
-  /* Horizontal style */
-  /* transform-origin:100% 100%; */
 }
 
 .zoom:hover img {
   transform: scale(1.9);
-  /* Horizontal style */
-  /* translateX(50%); */
 }
